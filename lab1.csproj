@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICanAcceptProduct.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductExpert.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seller.cs" />
+    <Compile Include="Shop.cs" />
+    <Compile Include="Storekeeper.cs" />
+    <Compile Include="Worker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
