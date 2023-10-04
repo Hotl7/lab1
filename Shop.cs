@@ -10,7 +10,8 @@ namespace lab1
     {
         private string adress;
         private double money;
-        private Product[] Product;
+        private Product[] products;
+        private Worker[] workers;
 
 
         public Shop(string address) { }
