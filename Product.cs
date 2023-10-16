@@ -19,6 +19,7 @@ namespace lab1
             this.price = price;
             this.acceptedBy = acceptedBy;
             this.amount = amount;
+            Console.WriteLine("Создался объект Product");
         }
     }
 }

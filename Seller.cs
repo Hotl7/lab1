@@ -10,11 +10,14 @@ namespace lab1
     {
         public Seller(string name,string phoneNumber) {
             this.name = name;
-            this.phoneNumber = phoneNumber; 
+            this.phoneNumber = phoneNumber;
+            Console.WriteLine("Создался объект Seller");
 
         }
 
-        public void sellProduct(Product product) { }
+        public void sellProduct(Product product) {
+            Console.WriteLine("Seller продал Product");
+        }
 
     }
 }

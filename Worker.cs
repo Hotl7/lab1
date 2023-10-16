@@ -11,6 +11,9 @@ namespace lab1
         protected string name;
         protected string phoneNumber;
 
-        public void hasArrived() { }
+        public void hasArrived() {
+            Console.WriteLine("Сотрудник прибыл на работу");
+
+        }
     }
 }

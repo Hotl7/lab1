@@ -11,13 +11,21 @@ namespace lab1
         public ProductExpert(string name,string phoneNumber) {
             this.name = name;
             this.phoneNumber = phoneNumber;
-            
+            Console.WriteLine("Создался объект ProductExpert");
+
         }
-        public void acceptProduct(Product product) { }
+        public void acceptProduct(Product product) {
+            Console.WriteLine("ProductExpert принял товар");
+        }
 
-        public void refundProduct(Product product) { }
+        public void refundProduct(Product product) {
+            Console.WriteLine("ProductExpert сделал возврат товара");
+        }
 
 
-        public void deleteProduct(Product product) { }
+        public void deleteProduct(Product product) {
+            Console.WriteLine("ProductExpert снял товар с продажи");
+
+        }
     }
 }

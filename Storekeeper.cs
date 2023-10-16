@@ -11,9 +11,15 @@ namespace lab1
         public Storekeeper(string name, string phoneNumber) {
             this.name = name;
             this.phoneNumber = phoneNumber;
+            Console.WriteLine("Создался объект Storekeeper");
         }
-        public void acceptProduct(Product product) { }
+        public void acceptProduct(Product product) {
+            Console.WriteLine("Storekeeper принял товар");
+        }
 
-        public void takeInventory(Product[] section) { }
+        public void takeInventory(List<Product> section) {
+            Console.WriteLine("Storekeeper провел инвентаризацию");
+
+        }
     }
 }
