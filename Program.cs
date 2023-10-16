@@ -10,11 +10,16 @@ namespace lab1
     {
         static void Main(string[] args)
         {
-            Shop shop=new Shop("Московский тракт 89",9900000);
-            Worker seller = new Storekeeper("Иванов Иван Иванович", "7-999-500-90-70");
-            shop.hireWorker("Иванов Иван Иванович", "7-999-500-90-70", "продавец");
-            seller.hasArrived();
-            Product prod =new Product("Вино Цица",200, "Иванов Иван Иванович", 10);
+            Shop shop=new Shop("Store1","пр-т Ленина,66",10000);
+            Product prod = new Product("prod1", 199, "stKpr 1", 10);
+            Worker[] workers = { 
+                new Storekeeper("stKpr1", "202-101"),
+                new ProductExpert("expert1","111-222"),
+                new Seller("seller1","333-000") 
+            };
+            shop.hireWorker("seller1", "333-000", "seller");
+            
+            
             
 
         }

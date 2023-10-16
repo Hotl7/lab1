@@ -8,6 +8,7 @@ namespace lab1
 {
     internal class Shop
     {
+        private string name;
         private string adress;
         private double money;
         private List<Product> Products { get;set; } = new List<Product>();
@@ -18,10 +19,13 @@ namespace lab1
             this.adress = address;
             Console.WriteLine("Создался объект Shop");
         }
-        public Shop(string address, double money) {
+        public Shop(string name,string address, double money)
+        {
             this.adress = address;
             this.money = money;
+            this.name = name;
             Console.WriteLine("Создался объект Shop");
+            
         }
 
         public void hireWorker(string name, string phoneNumber, string post) {
