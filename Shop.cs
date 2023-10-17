@@ -11,8 +11,8 @@ namespace lab1
         private string name;
         private string adress;
         private double money;
-        private List<Product> Products { get;set; } = new List<Product>();
-        private List<Worker> Workers { get; set; } =new List<Worker>();
+        private List<Product> assortment { get;set; } = new List<Product>();
+        private List<Worker> staff { get; set; } =new List<Worker>();
 
 
         public Shop(string address) {
@@ -28,6 +28,10 @@ namespace lab1
             
         }
 
+        public void addProduct(Product product)
+        {
+            Console.WriteLine("Магазин добавил Продукт");
+        }
         public void hireWorker(string name, string phoneNumber, string post) {
             Console.WriteLine("Магазин нанял Сотрудника");
         }
