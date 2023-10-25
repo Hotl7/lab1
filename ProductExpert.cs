@@ -14,7 +14,7 @@ namespace lab1
             Console.WriteLine("Создался объект ProductExpert");
 
         }
-        public void acceptProduct(Product product) {
+        public void acceptProduct(string name, double price, string acceptedBy, int amount, Shop shop) {
             Console.WriteLine("ProductExpert принял товар");
         }
 

@@ -13,8 +13,18 @@ namespace lab1
             this.phoneNumber = phoneNumber;
             Console.WriteLine("Создался объект Storekeeper");
         }
-        public void acceptProduct(Product product) {
-            Console.WriteLine("Storekeeper принял товар");
+        public void acceptProduct(string name, double price, string acceptedBy, int amount,Shop shop)
+        {
+            bool retrn=shop.searchProductInAssortment(name);
+            if (retrn)
+            {
+                shop.updateAssortment(name, amount);
+            }
+            else
+            {
+                Product product=new Product(name, price,acceptedBy,amount);
+                shop.addProduct(product);
+            }
         }
 
         public void takeInventory(List<Product> section) {

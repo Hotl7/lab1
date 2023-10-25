@@ -8,6 +8,6 @@ namespace lab1
 {
     internal interface ICanAcceptProduct
     {
-         void acceptProduct(Product product);
+         void acceptProduct(string name,double price,string acceptedBy,int amount,Shop shop);
     }
 }

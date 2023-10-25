@@ -10,17 +10,15 @@ namespace lab1
     {
         static void Main(string[] args)
         {
-            Shop shop=new Shop("Store1","пр-т Ленина,66",10000);
+            Shop shop=new Shop("пр-т Ленина,66",10000);
             Product prod = new Product("prod1", 199, "stKpr 1", 10);
-            Worker[] workers = { 
-                new Storekeeper("stKpr1", "202-101"),
-                new ProductExpert("expert1","111-222"),
-                new Seller("seller1","333-000") 
-            };
-            shop.hireWorker("seller1", "333-000", "seller");
+            Storekeeper strKpr = new Storekeeper("stKpr1", "202-101"); 
+            shop.hireWorker("storeKeeper", "333-000", "stKeeper");
+            strKpr.acceptProduct("prod1", 199, "stKpr 1", 10, shop);
             
-            
-            
+
+
+
 
         }
     }

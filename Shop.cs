@@ -8,29 +8,38 @@ namespace lab1
 {
     internal class Shop
     {
-        private string name;
         private string adress;
         private double money;
-        private List<Product> assortment { get;set; } = new List<Product>();
-        private List<Worker> staff { get; set; } =new List<Worker>();
+        private List<Product> assortment = new List<Product>();
+        private List<Worker> staff = new List<Worker>();
 
 
         public Shop(string address) {
             this.adress = address;
             Console.WriteLine("Создался объект Shop");
         }
-        public Shop(string name,string address, double money)
+        public Shop(string address, double money)
         {
             this.adress = address;
             this.money = money;
-            this.name = name;
+           
             Console.WriteLine("Создался объект Shop");
             
         }
 
+
         public void addProduct(Product product)
         {
-            Console.WriteLine("Магазин добавил Продукт");
+            assortment.Add(product);
+        }
+
+        public void updateAssortment(string name, int amount)
+        {
+            foreach(var item in assortment)
+            {
+                if(item.Name == name) { item.Amount = amount; } 
+            }
+            
         }
         public void hireWorker(string name, string phoneNumber, string post) {
             Console.WriteLine("Магазин нанял Сотрудника");
@@ -39,5 +48,15 @@ namespace lab1
             Console.WriteLine("Магазин оплатил налоги");
 
         }
+        public bool searchProductInAssortment(string name)
+        {
+            foreach (var item in assortment)
+            {
+                if (item.Name == name) { return true; }
+                
+            }
+            return false;
+
+        } 
     }
 }

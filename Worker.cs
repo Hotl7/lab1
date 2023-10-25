@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace lab1
 {
     internal abstract class Worker
-    {
+    { 
         protected string name;
         protected string phoneNumber;
 

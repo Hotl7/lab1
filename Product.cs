@@ -12,6 +12,9 @@ namespace lab1
         private double price;
         private string acceptedBy;
         private int amount;
+        public string Name {  get { return name; } }
+        public int Amount { set {  amount = value; } }
+        
 
         public Product(string name, double price, string acceptedBy, int amount)
         {
